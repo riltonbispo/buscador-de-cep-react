@@ -1,0 +1,98 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(#141E30, #243B55);
+}
+
+.title {
+  font-size: 5.313rem;
+  color: white;
+  animation: flipTitle 900ms;
+}
+
+@keyframes flipTitle {
+  from {
+    transform: rotateX(90deg);
+  }
+
+  to {
+    transform: rotateX(0deg);
+  }
+}
+
+.container-Input {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0.938rem;
+  margin: 2.125rem 0;
+  display: flex;
+  border-radius: 8px;
+  box-shadow: 0.063rem 0.125rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.container-Input input {
+  background-color: transparent;
+  border: 0;
+  font-size: 1.25rem;
+  color: white;
+  outline: none;
+  margin-right: 0.5rem;
+}
+
+.container-Input input::placeholder {
+  color: rgba(255, 255, 255, 0.56);
+}
+
+.buttonSearch {
+  background-color: transparent;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.buttonSearch:hover {
+  transform: scale(1.2);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  width: 31.25rem;
+  border-radius: 0.5rem;
+}
+
+.main h2 {
+  margin: 1rem 0;
+  font-size: 2.438rem;
+  color: rgba(0, 0, 0, 0.881);
+}
+
+.main span {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.702);
+}
+
+@media (max-width:44.563rem) {
+  .title {
+    font-size: 3.75rem;
+  }
+
+  .main h2 {
+    font-size: 1.75rem;
+  }
+
+  .main {
+    width: 80%;
+    min-height: 15.625rem;
+  }
+
+}
